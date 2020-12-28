@@ -1,5 +1,5 @@
 ---
-name: Cyberpunk 2077
+name: CyberPunk 2077
 key: cyberpunk2077
 steamid: 1113000
 gog: true
