@@ -54,23 +54,23 @@ defaults:
       path: ""
       type: "games"
     values:
-      layout: "game"
+      layout: "content_games"
   -
     scope:
       path: ""
       type: "reviews"
     values:
-      layout: "review" 
+      layout: "content_reviews" 
       author: "Jhin"
   -
     scope:
       path: ""
       type: "authors"
     values:
-      layout: "author" 
+      layout: "user_authors" 
   -
     scope:
       path: ""
-      type: "authors"
+      type: "platforms"
     values:
-      layout: "platforms" 
+      layout: "content_platforms" 
