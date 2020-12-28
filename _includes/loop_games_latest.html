@@ -59,7 +59,7 @@
 
 				{% if game.ps1 == true %}
 					<span class="uk-label sony" uk-tooltip="PlayStation">PSX</span>
-					{% assign sony = +1 %}
+					{% assign sony = sony +1 %}
 				{% endif %}
 				{% if game.ps2 == true %}
 					<span class="uk-label sony" uk-tooltip="PlayStation 2">PS2</span>
@@ -79,7 +79,7 @@
 				{% if game.psvita == true %}
 					<span class="uk-label sony" uk-tooltip="PlayStation 5">PSV</span>
 				{% endif %}	
-				{sony}
+				{{sony}}
 				
 			</div>
 		</div>
