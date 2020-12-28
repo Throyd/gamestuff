@@ -54,7 +54,7 @@
 				{% endif %}
 
 				
-				{% if game.ps4 or game.ps5 == true %}
+				{% if game.ps1 or game.ps2 or game.ps3 or game.ps4 or game.ps5 or game.psp or game.psvita == true %}
 					<div class="uk-grid-row-small">
 						<p class="uk-text-meta uk-margin-remove">SONY</p>
 						{% if game.ps1 == true %}
@@ -73,10 +73,10 @@
 							<span class="uk-label sony" uk-tooltip="PlayStation 5">PS5</span>
 						{% endif %}
 						{% if game.psp == true %}
-							<span class="uk-label sony" uk-tooltip="PlayStation 5">PSP</span>
+							<span class="uk-label sony" uk-tooltip="PlayStation Portable">PSP</span>
 						{% endif %}
 						{% if game.psvita == true %}
-							<span class="uk-label sony" uk-tooltip="PlayStation 5">PSV</span>
+							<span class="uk-label sony" uk-tooltip="PlayStation Vita">PSV</span>
 						{% endif %}
 					</div>
 				{% endif %}
