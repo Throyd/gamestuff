@@ -55,33 +55,35 @@
 
 				
 				{% if game.ps4 or game.ps5 == true %}
-				JHIN MOLA
+					<div class="uk-grid-row-small">
+						<p class="uk-text-meta uk-margin-remove-top">SONY</p>
+						{% if game.ps1 == true %}
+							<span class="uk-label sony" uk-tooltip="PlayStation">PSX</span>
+						{% endif %}
+						{% if game.ps2 == true %}
+							<span class="uk-label sony" uk-tooltip="PlayStation 2">PS2</span>
+						{% endif %}
+						{% if game.ps3 == true %}
+							<span class="uk-label sony" uk-tooltip="PlayStation 3">PS3</span>
+						{% endif %}
+						{% if game.ps4 == true %}
+							<span class="uk-label sony" uk-tooltip="PlayStation 4">PS4</span>
+						{% endif %}
+						{% if game.ps5 == true %}
+							<span class="uk-label sony" uk-tooltip="PlayStation 5">PS5</span>
+						{% endif %}
+						{% if game.psp == true %}
+							<span class="uk-label sony" uk-tooltip="PlayStation 5">PSP</span>
+						{% endif %}
+						{% if game.psvita == true %}
+							<span class="uk-label sony" uk-tooltip="PlayStation 5">PSV</span>
+						{% endif %}
+					</div>
 				{% endif %}
 
 
-				{% if game.ps1 == true %}
-					<span class="uk-label sony" uk-tooltip="PlayStation">PSX</span>
-					{% assign sony = sony +1 %}
-				{% endif %}
-				{% if game.ps2 == true %}
-					<span class="uk-label sony" uk-tooltip="PlayStation 2">PS2</span>
-				{% endif %}
-				{% if game.ps3 == true %}
-					<span class="uk-label sony" uk-tooltip="PlayStation 3">PS3</span>
-				{% endif %}
-				{% if game.ps4 == true %}
-					<span class="uk-label sony" uk-tooltip="PlayStation 4">PS4</span>
-				{% endif %}
-				{% if game.ps5 == true %}
-					<span class="uk-label sony" uk-tooltip="PlayStation 5">PS5</span>
-				{% endif %}
-				{% if game.psp == true %}
-					<span class="uk-label sony" uk-tooltip="PlayStation 5">PSP</span>
-				{% endif %}
-				{% if game.psvita == true %}
-					<span class="uk-label sony" uk-tooltip="PlayStation 5">PSV</span>
-				{% endif %}	
-				{{sony}}
+
+
 				
 			</div>
 		</div>
