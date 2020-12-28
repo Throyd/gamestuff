@@ -10,4 +10,5 @@ ps5: true
 xone: true
 xseries: true
 stadia: true
+developer: CD Projekt Red
 ---
