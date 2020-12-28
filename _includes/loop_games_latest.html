@@ -15,44 +15,48 @@
 				</div>
 			</div>
 			<div class="uk-card-footer">
-
-				{% if game.nes == true %}
-					<span class="uk-label nintendo" uk-tooltip="Nintendo Entertainment System">NES</span>
+			
+				{% if game.nes or game.snes or game.n64 or game.ngc or game.wii or game.wiiu or game.nswitch or game.gb or game.gbc or game.gba or game.nds or game.3ds == true %}
+					<div class="uk-grid-row-small">
+						<p class="uk-text-meta uk-margin-remove">NINTENDO</p>
+						{% if game.nes == true %}
+							<span class="uk-label nintendo" uk-tooltip="Nintendo Entertainment System">NES</span>
+						{% endif %}
+						{% if game.snes == true %}
+							<span class="uk-label nintendo" uk-tooltip="Super Nintendo Entertainment System">SNES</span>
+						{% endif %}
+						{% if game.n64 == true %}
+							<span class="uk-label nintendo" uk-tooltip="Nintendo 64">N64</span>
+						{% endif %}
+						{% if game.ngc == true %}
+							<span class="uk-label nintendo" uk-tooltip="GameCube">NGC</span>
+						{% endif %}
+						{% if game.wii == true %}
+							<span class="uk-label nintendo" uk-tooltip="Wii">WII</span>
+						{% endif %}
+						{% if game.wiiu == true %}
+							<span class="uk-label nintendo" uk-tooltip="Wii U">WIIU</span>
+						{% endif %}
+						{% if game.nswitch == true %}
+							<span class="uk-label nintendo" uk-tooltip="Switch">SWITCH</span>
+						{% endif %}
+						{% if game.gb == true %}
+							<span class="uk-label nintendo" uk-tooltip="Game Boy">Game Boy</span>
+						{% endif %}
+						{% if game.gbc == true %}
+							<span class="uk-label nintendo" uk-tooltip="Game Boy Color">GBC</span>
+						{% endif %}
+						{% if game.gba == true %}
+							<span class="uk-label nintendo" uk-tooltip="Game Boy Advance">GBA</span>
+						{% endif %}
+						{% if game.nds == true %}
+							<span class="uk-label nintendo" uk-tooltip="Nintendo DS">NDS</span>
+						{% endif %}
+						{% if game.3ds == true %}
+							<span class="uk-label nintendo" uk-tooltip="Nintendo 3DS">3DS</span>
+						{% endif %}
+					</div>
 				{% endif %}
-				{% if game.snes == true %}
-					<span class="uk-label nintendo" uk-tooltip="Super Nintendo Entertainment System">SNES</span>
-				{% endif %}
-				{% if game.n64 == true %}
-					<span class="uk-label nintendo" uk-tooltip="Nintendo 64">N64</span>
-				{% endif %}
-				{% if game.ngc == true %}
-					<span class="uk-label nintendo" uk-tooltip="GameCube">NGC</span>
-				{% endif %}
-				{% if game.wii == true %}
-					<span class="uk-label nintendo" uk-tooltip="Wii">WII</span>
-				{% endif %}
-				{% if game.wiiu == true %}
-					<span class="uk-label nintendo" uk-tooltip="Wii U">WIIU</span>
-				{% endif %}
-				{% if game.nswitch == true %}
-					<span class="uk-label nintendo" uk-tooltip="Switch">SWITCH</span>
-				{% endif %}
-				{% if game.gb == true %}
-					<span class="uk-label nintendo" uk-tooltip="Game Boy">Game Boy</span>
-				{% endif %}
-				{% if game.gbc == true %}
-					<span class="uk-label nintendo" uk-tooltip="Game Boy Color">GBC</span>
-				{% endif %}
-				{% if game.gba == true %}
-					<span class="uk-label nintendo" uk-tooltip="Game Boy Advance">GBA</span>
-				{% endif %}
-				{% if game.nds == true %}
-					<span class="uk-label nintendo" uk-tooltip="Nintendo DS">NDS</span>
-				{% endif %}
-				{% if game.3ds == true %}
-					<span class="uk-label nintendo" uk-tooltip="Nintendo 3DS">3DS</span>
-				{% endif %}
-
 				
 				{% if game.ps1 or game.ps2 or game.ps3 or game.ps4 or game.ps5 or game.psp or game.psvita == true %}
 					<div class="uk-grid-row-small">
