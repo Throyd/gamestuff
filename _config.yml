@@ -5,6 +5,7 @@ url: "https://throyd.github.io/gamestuff" # The base hostname & protocol for you
 collections:
   games:
     name:
+    key:
     steam:
     epic:
     gog:
