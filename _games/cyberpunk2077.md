@@ -1,23 +1,8 @@
 ---
-name: CyberPunk 2077
-steam:true
-epic: true
-gog: true
-uplay: false
-origin: false
-nswitch: false
-ps4: true
-ps5: true
-xone: true
-xseriesx: true
-stadia: true
-cover:
-banner:
-link:    
-developer: CD Projekt Red
-developer-link:
-publisher: Bandai Namco
-publisher-link:
-launchdate: 10/12/2020
+name: Persona 4 Golden
+key: persona4golden
+steamid: 1113000
+developer: Atlus
+publisher: Sega
+launchdate: 13/06/2020
 ---
-Una locura de juego.
