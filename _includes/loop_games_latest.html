@@ -38,19 +38,19 @@
 					<span class="uk-label nintendo" uk-tooltip="Switch">SWITCH</span>
 				{% endif %}
 				{% if game.gb == true %}
-					<span class="uk-label nintendo">PS3</span>
+					<span class="uk-label nintendo" uk-tooltip="Game Boy">Game Boy</span>
 				{% endif %}
 				{% if game.gbc == true %}
-					<span class="uk-label nintendo">PS4</span>
+					<span class="uk-label nintendo" uk-tooltip="Game Boy Color">GBC</span>
 				{% endif %}
 				{% if game.gba == true %}
-					<span class="uk-label nintendo">PS5</span>
+					<span class="uk-label nintendo" uk-tooltip="Game Boy Advance">GBA</span>
 				{% endif %}
 				{% if game.nds == true %}
-					<span class="uk-label nintendo">PSX</span>
+					<span class="uk-label nintendo" uk-tooltip="Nintendo DS">NDS</span>
 				{% endif %}
 				{% if game.3ds == true %}
-					<span class="uk-label nintendo">PS2</span>
+					<span class="uk-label nintendo" uk-tooltip="Nintendo 3DS">3DS</span>
 				{% endif %}
 
 				
@@ -72,6 +72,13 @@
 				{% if game.ps5 == true %}
 					<span class="uk-label sony" uk-tooltip="PlayStation 5">PS5</span>
 				{% endif %}
+				{% if game.psp == true %}
+					<span class="uk-label sony" uk-tooltip="PlayStation 5">PSP</span>
+				{% endif %}
+				{% if game.psvita == true %}
+					<span class="uk-label sony" uk-tooltip="PlayStation 5">PSV</span>
+				{% endif %}				
+				
 			</div>
 		</div>
 	</div>
