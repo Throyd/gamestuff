@@ -1,8 +1,13 @@
 ---
-name: Persona 4 Golden
-key: persona4golden
+name: Cyberpunk 2077
+key: cyberpunk2077
 steamid: 1113000
-developer: Atlus
-publisher: Sega
-launchdate: 13/06/2020
+gog: true
+steam: true
+epic: true
+ps4: true
+ps5: true
+xone: true
+xseries: true
+stadia: true
 ---
