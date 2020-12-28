@@ -5,7 +5,17 @@ url: "https://throyd.github.io/gamestuff" # The base hostname & protocol for you
 collections:
   games:
     name:
-    platform:
+    steam:
+    epic:
+    gog:
+    uplay:
+    origin:
+    nswitch:
+    ps4:
+    ps5:
+    xone:
+    xseriesx:
+    stadia:
     cover:
     banner:
     link:    
