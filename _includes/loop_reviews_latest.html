@@ -1,15 +1,4 @@
 {% for review in site.reviews %}
-	{% for game in site.games %}
-    	{% if game.key == review.gamename %}
-			{% assign steamid = game.steamid %}
-		{% endif %}
-	{% endfor %}
-{% for author in site.authors %}
-	{% if author.name == review.author %}
-		{% assign avatar = author.avatar %}
-		{% assign author = author.name %}
-	{% endif %}
-{% endfor %}
 
 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s review-darker" uk-grid>
 	<div class="uk-card-media-left uk-cover-container">
@@ -19,7 +8,7 @@
 	<div>
 		<div class="uk-card-body">
 			<a href="https://throyd.github.io/steamstuff/criticas/{{review.title ||downcase }}">
-				<h3 class="review_name">{{review.name}}</h3>
+
 			</a>
 			
 			<div class="uk-grid uk-child-width-1-6">
@@ -29,11 +18,7 @@
 					</a>
 				</div>
 				<div class="uk-width-expand">
-					{% if review.thumbs == "up" %}
-						<img src="https://steamstore-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="28" "height="28" style="margin-top: 2px;">
-					{% else %}
-						<i class="fas fa-thumbs-down fa-2x"></i>
-					{% endif %}
+
 				</div>
 			</div>
 				
@@ -54,7 +39,7 @@
 							&nbsp; {{author}}
 						 </span>
 					</a>
-					 <span class="uk-text-meta uk-margin-remove-top">el {{review.publisheddate}}.</span>
+
   				</div>
         		</div>
 		</div>
