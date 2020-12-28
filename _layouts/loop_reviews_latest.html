@@ -1,0 +1,63 @@
+{% for review in site.reviews %}
+	{% for game in site.games %}
+    	{% if game.key == review.gamename %}
+			{% assign steamid = game.steamid %}
+		{% endif %}
+	{% endfor %}
+{% for author in site.authors %}
+	{% if author.name == review.author %}
+		{% assign avatar = author.avatar %}
+		{% assign author = author.name %}
+	{% endif %}
+{% endfor %}
+
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s review-darker" uk-grid>
+	<div class="uk-card-media-left uk-cover-container">
+		<img src="https://steamcdn-a.akamaihd.net/steam/apps/{{steamid}}/header.jpg" alt="" uk-cover>
+		<canvas width="460" height="215"></canvas>
+	</div>
+	<div>
+		<div class="uk-card-body">
+			<a href="https://throyd.github.io/steamstuff/criticas/{{review.title ||downcase }}">
+				<h3 class="review_name">{{review.name}}</h3>
+			</a>
+			
+			<div class="uk-grid uk-child-width-1-6">
+				<div>
+					<a class="uk-link-muted" href="https://store.steampowered.com/app/{{steamid}}" target="_blank">
+						<i class="fab fa-steam-square steam_link fa-2x"></i>
+					</a>
+				</div>
+				<div class="uk-width-expand">
+					{% if review.thumbs == "up" %}
+						<img src="https://steamstore-a.akamaihd.net/public/shared/images/userreviews/icon_thumbsUp_v6.png" width="28" "height="28" style="margin-top: 2px;">
+					{% else %}
+						<i class="fas fa-thumbs-down fa-2x"></i>
+					{% endif %}
+				</div>
+			</div>
+				
+			<p>
+				
+	
+			</p>
+			<div class="uk-grid-small uk-flex-middle" uk-grid>
+				<div class="uk-width-auto">
+					<span class="uk-text-meta uk-margin-remove-top">Publicado por &nbsp;</span> 
+					<a href="https://throyd.github.io/steamstuff/autores/{{author || downcase}}"> 
+						<img class="uk-border-circle" width="18" height="18" src="https://throyd.github.io/steamstuff/assets/imgs/avatars/{{avatar}}">
+					</a>
+				</div>
+				<div class="uk-padding-remove">
+                			 <a href="https://throyd.github.io/steamstuff/autores/{{author || downcase}}">
+						 <span class="uk-margin-remove-bottom">
+							&nbsp; {{author}}
+						 </span>
+					</a>
+					 <span class="uk-text-meta uk-margin-remove-top">el {{review.publisheddate}}.</span>
+  				</div>
+        		</div>
+		</div>
+	</div>
+</div>
+{% endfor %}

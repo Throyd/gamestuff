@@ -2,13 +2,17 @@ title: Cosicas sobre Videojuegos
 tagline: "Porque de algo hay que hablar, ¿no?"
 url: "https://throyd.github.io/gamestuff" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
-
 collections:
   games:
     name:
-    steamid:
+    platform:
+    cover:
+    banner:
+    link:    
     developer: 
+    developer-link:
     publisher:
+    publisher-link:
     launchdate: 
     output: true
     permalink: /juegos/:title/
