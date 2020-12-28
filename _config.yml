@@ -1,0 +1,62 @@
+title: Cosicas sobre Videojuegos
+tagline: "Porque de algo hay que hablar, ¿no?"
+url: "https://throyd.github.io/gamestuff" # The base hostname & protocol for your site. Use it if you need absolute URL's
+
+
+collections:
+  games:
+    name:
+    steamid:
+    developer: 
+    publisher:
+    launchdate: 
+    output: true
+    permalink: /juegos/:title/
+  reviews:
+    name:
+    gamename:
+    version:
+    author:
+    publisheddate:
+    thumbs:
+    output: true
+    permalink: /criticas/:title/
+  authors:
+    name:
+    aboutme:
+    avatar:
+    output: true
+    permalink: /autores/:title/ 
+  platform:
+    name:
+    hardware:
+    icon:
+    output: true
+    permalink: /plataforma/:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "games"
+    values:
+      layout: "game"
+  -
+    scope:
+      path: ""
+      type: "reviews"
+    values:
+      layout: "review" 
+      author: "Jhin"
+  -
+    scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author" 
+  -
+    scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "platforms" 
