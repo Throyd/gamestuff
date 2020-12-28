@@ -11,8 +11,13 @@ collections:
     uplay:
     origin:
     nswitch:
+    psx:
+    ps2:
+    ps3:
     ps4:
     ps5:
+    psp:
+    psvita:
     xone:
     xseriesx:
     stadia:
