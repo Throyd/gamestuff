@@ -61,7 +61,7 @@
 				{% if game.ps1 or game.ps2 or game.ps3 or game.ps4 or game.ps5 or game.psp or game.psvita == true %}
 					<div class="uk-grid-row-small">
 						<p class="uk-text-meta uk-margin-remove">SONY</p>
-						{% if game.ps1 == true %}
+						{% if game.psx == true %}
 							<span class="uk-label sony" uk-tooltip="PlayStation">PSX</span>
 						{% endif %}
 						{% if game.ps2 == true %}
@@ -84,7 +84,23 @@
 						{% endif %}
 					</div>
 				{% endif %}
-
+				{% if game.xbox or game.x360 or game.xone or game.xseries == true %}
+					<div class="uk-grid-row-small">
+						{% if game.xbox == true %}
+							<span class="uk-label microsoft" uk-tooltip="Xbox">Xbox</span>
+						{% endif %}
+						{% if game.x360 == true %}
+							<span class="uk-label microsoft" uk-tooltip="Xbox 360">360</span>
+						{% endif %}
+						{% if game.xone == true %}
+							<span class="uk-label microsoft" uk-tooltip="Xbox One">X One</span>
+						{% endif %}
+						{% if game.xseries == true %}
+							<span class="uk-label microsoft" uk-tooltip="Xbox Series">X Series</span>
+						{% endif %}
+						
+					</div>
+				{% endif %}
 
 
 
